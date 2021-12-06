@@ -18,6 +18,8 @@ class Signup : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
+        mAuth= FirebaseAuth.getInstance()
+
         edtEmail=findViewById(R.id.editEmailAddress)
         edtPassword=findViewById(R.id.editTextTextPass)
         edtName=findViewById(R.id.username)
@@ -31,7 +33,7 @@ class Signup : AppCompatActivity() {
     }
     private fun signup(email: String, password: String){
         //creating user
-        mAuth.createUserWithEmailAndPassword(email, password)
+        mAuth.createUserWithEmailAndPassword(email,password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
