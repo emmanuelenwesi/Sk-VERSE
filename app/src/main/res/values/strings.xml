@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Sk-VERSE</string>
+    <string name="emailHint">email address</string>
+    <string name="login">Login</string>
+    <string name="passHint">password</string>
+    <string name="firstLogo">sk_logo</string>
+    <string name="userNameHint">Username</string>
+    <string name="signup">Sign up</string>
+
+
 </resources>

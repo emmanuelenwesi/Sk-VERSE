@@ -17,7 +17,8 @@ class userAdapter(val context: Context, val userList: ArrayList<Users>):
     }
 
     override fun onBindViewHolder(holder: userViewHolder, position: Int) {
-
+     val currentUser= userList[position]
+        holder.textName.text=currentUser.name
     }
 
     override fun getItemCount(): Int {
