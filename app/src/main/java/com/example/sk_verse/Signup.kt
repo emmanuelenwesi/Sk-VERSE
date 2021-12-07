@@ -23,9 +23,9 @@ class Signup : AppCompatActivity() {
         setContentView(R.layout.activity_signup)
         mAuth= FirebaseAuth.getInstance()
 
-        edtEmail=findViewById(R.id.editEmailAddress)
-        edtPassword=findViewById(R.id.editTextTextPass)
-        edtName=findViewById(R.id.username)
+        edtEmail=findViewById(R.id.editEmailAddress1)
+        edtPassword=findViewById(R.id.editTextTextPass1)
+        edtName=findViewById(R.id.username1)
         btnSignUp=findViewById(R.id.sign_up_btn)
         btnSignUp.setOnClickListener {
             val email= edtEmail.text.toString()

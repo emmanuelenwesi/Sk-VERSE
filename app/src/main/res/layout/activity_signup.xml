@@ -17,7 +17,7 @@ tools:context=".Login">
     android:contentDescription="TODO" />
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/username1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@id/app_logo"
@@ -29,10 +29,10 @@ tools:context=".Login">
         android:inputType="text"
         android:paddingStart="13dp" />
 <EditText
-    android:id="@+id/editEmailAddress"
+    android:id="@+id/editEmailAddress1"
     android:layout_width="match_parent"
     android:layout_height="50dp"
-    android:layout_below="@id/username"
+    android:layout_below="@id/username1"
     android:layout_marginTop="18dp"
     android:hint="Username"
     android:paddingStart="13dp"
@@ -42,10 +42,10 @@ tools:context=".Login">
     android:background="@drawable/edit_background"
     />
 <EditText
-    android:id="@+id/editTextTextPass"
+    android:id="@+id/editTextTextPass1"
     android:layout_width="match_parent"
     android:layout_height="50dp"
-    android:layout_below="@id/editEmailAddress"
+    android:layout_below="@id/editEmailAddress1"
     android:layout_marginTop="18dp"
     android:hint="  password"
     android:paddingLeft="13dp"
@@ -58,7 +58,7 @@ tools:context=".Login">
         android:id="@+id/sign_up_btn"
         android:layout_width="159dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editTextTextPass"
+        android:layout_below="@id/editTextTextPass1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
         android:background="@drawable/btn_background"
