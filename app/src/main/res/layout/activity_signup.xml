@@ -7,17 +7,17 @@ android:layout_height="match_parent"
 tools:context=".Login">
 
 
-<ImageView
-    android:id="@+id/app_logo"
-    android:layout_width="189dp"
-    android:layout_height="200dp"
-    android:layout_centerHorizontal="true"
-    android:layout_marginTop="75dp"
-    android:src="@drawable/sk_verse"
-    android:contentDescription="TODO" />
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/sk_verse" />
 
     <EditText
-        android:id="@+id/username1"
+        android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@id/app_logo"
@@ -25,16 +25,16 @@ tools:context=".Login">
         android:layout_marginTop="18dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/edit_background"
-        android:hint="email address"
+        android:hint="username"
         android:inputType="text"
         android:paddingStart="13dp" />
 <EditText
-    android:id="@+id/editEmailAddress1"
+    android:id="@+id/editEmailAddress"
     android:layout_width="match_parent"
     android:layout_height="50dp"
-    android:layout_below="@id/username1"
+    android:layout_below="@id/username"
     android:layout_marginTop="18dp"
-    android:hint="Username"
+    android:hint="email address"
     android:paddingStart="13dp"
     android:layout_marginLeft="20dp"
     android:layout_marginRight="20dp"
@@ -42,12 +42,12 @@ tools:context=".Login">
     android:background="@drawable/edit_background"
     />
 <EditText
-    android:id="@+id/editTextTextPass1"
+    android:id="@+id/editTextTextPass"
     android:layout_width="match_parent"
     android:layout_height="50dp"
-    android:layout_below="@id/editEmailAddress1"
+    android:layout_below="@id/editEmailAddress"
     android:layout_marginTop="18dp"
-    android:hint="  password"
+    android:hint=" password"
     android:paddingLeft="13dp"
     android:layout_marginLeft="20dp"
     android:layout_marginRight="20dp"
@@ -56,9 +56,9 @@ tools:context=".Login">
 
     <Button
         android:id="@+id/sign_up_btn"
-        android:layout_width="159dp"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editTextTextPass1"
+        android:layout_below="@id/editTextTextPass"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
         android:background="@drawable/btn_background"

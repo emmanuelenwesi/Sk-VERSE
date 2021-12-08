@@ -35,8 +35,13 @@ class MainActivity : AppCompatActivity() {
             override fun onDataChange(snapshot: DataSnapshot) {
                 userList.clear()
                 for (postSnapshot in snapshot.children){
-                    val currentUsers= postSnapshot.getValue(Users::class.java)
-                    userList.add(currentUsers!!)
+                    val currentUser= postSnapshot.getValue(Users::class.java)
+                    if (mAuth.currentUser?.uid !=currentUser?.uid ){
+                        userList.add(currentUser!!)
+
+
+                    }
+
                 }
                 adapter.notifyDataSetChanged()
 

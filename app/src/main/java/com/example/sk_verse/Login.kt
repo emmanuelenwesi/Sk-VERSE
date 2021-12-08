@@ -25,6 +25,7 @@ class Login : AppCompatActivity() {
         edtPassword=findViewById(R.id.editTextTextPass)
         btnLogin=findViewById(R.id.login_btn)
         btnSignUp=findViewById(R.id.sign_up_btn)
+        supportActionBar?.hide()
         btnSignUp.setOnClickListener {
             val intent= Intent(this@Login,Signup::class.java)
             finish()

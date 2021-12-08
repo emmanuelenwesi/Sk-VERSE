@@ -22,11 +22,13 @@ class Signup : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
         mAuth= FirebaseAuth.getInstance()
-
-        edtEmail=findViewById(R.id.editEmailAddress1)
-        edtPassword=findViewById(R.id.editTextTextPass1)
-        edtName=findViewById(R.id.username1)
+        edtEmail=findViewById(R.id.editEmailAddress)
+        edtPassword=findViewById(R.id.editTextTextPass)
+        edtName=findViewById(R.id.username)
         btnSignUp=findViewById(R.id.sign_up_btn)
+        supportActionBar?.hide()
+
+
         btnSignUp.setOnClickListener {
             val email= edtEmail.text.toString()
             val name=  edtName.text.toString()
@@ -49,7 +51,6 @@ class Signup : AppCompatActivity() {
                     // If sign in fails, display a message to the user.
 
                     Toast.makeText(this@Signup, "Some error occurred.",Toast.LENGTH_SHORT).show()
-
                 }
             }
 
@@ -57,7 +58,5 @@ class Signup : AppCompatActivity() {
     private fun addUserToDatabase(name: String,email: String,uid: String){
         mDbRef= FirebaseDatabase.getInstance().reference
         mDbRef.child("Users").child(uid).setValue(Users(name,email,uid))
-
-
     }
 }
