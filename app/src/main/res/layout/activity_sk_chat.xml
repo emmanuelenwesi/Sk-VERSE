@@ -22,6 +22,7 @@
         android:layout_alignParentBottom="true"
         android:layout_height="wrap_content"
         android:weightSum="100"
+        android:layout_marginLeft="3dp"
         android:orientation="horizontal"
 
         >
