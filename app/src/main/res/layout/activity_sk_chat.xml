@@ -24,7 +24,7 @@
         android:weightSum="100"
         android:layout_marginLeft="5dp"
         android:orientation="horizontal"
-        android:background="@color/white"
+        android:background="@color/transparent"
 
         >
 
@@ -48,6 +48,7 @@
             android:layout_height="30dp"
             android:layout_weight="15"
             android:layout_marginTop="10dp"
+            android:paddingLeft="6dp"
             android:src="@drawable/sksend_removebg_preview"
 
             />
