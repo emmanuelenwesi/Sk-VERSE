@@ -8,10 +8,10 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/chatRecyclerView"
-        android:layout_above="@id/typeAndSend"
-        android:layout_alignParentTop="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@id/typeAndSend"
+        android:layout_alignParentTop="true"
 
         />
 
@@ -22,7 +22,10 @@
         android:layout_alignParentBottom="true"
         android:layout_height="wrap_content"
         android:weightSum="100"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+
+        >
+
         //layout weight 80 meaning it covers 80percent of the screen
 
         <EditText
