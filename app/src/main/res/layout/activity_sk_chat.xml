@@ -24,6 +24,7 @@
         android:weightSum="100"
         android:layout_marginLeft="5dp"
         android:orientation="horizontal"
+        android:background="@color/white"
 
         >
 
